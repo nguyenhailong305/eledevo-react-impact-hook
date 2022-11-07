@@ -19,7 +19,7 @@ var routes = require('./api/route');
 routes(app);
 
 app.use(function(req, res) {
-  res.status(404).send({url: req.originalUrl + ' not found'})
+  res.status(200).send({success: true})
 });
 
 app.listen(port);
