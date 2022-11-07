@@ -5,7 +5,7 @@ var express = require('express'),
   bodyParser = require('body-parser');
   cors = require('cors')
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/quiz_app',
+mongoose.connect('mongodb+srv://user:dauxanh@cluster0.2w1k1.mongodb.net/?retryWrites=true&w=majority',
 {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }).then(() => {
   console.log("Connected !!!")
 }).catch(err => {
