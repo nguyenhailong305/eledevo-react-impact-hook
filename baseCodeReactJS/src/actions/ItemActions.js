@@ -25,5 +25,5 @@ export const ItemAction = {
     searchRequest : createAction(actionType.Items.SEARCH_ITEMS_REQUEST),
     searchSuccess : createAction(actionType.Items.SEARCH_ITEMS_SUCCESS),
     searchFailure : createAction(actionType.Items.SEARCH_ITEMS_FAILURE),
-
+        
 }
