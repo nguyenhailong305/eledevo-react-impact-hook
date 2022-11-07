@@ -22,6 +22,10 @@ app.use(function(req, res) {
   res.status(200).send({success: true})
 });
 
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
+
 app.listen(port);
 
 console.log('Server started on: ' + port);
