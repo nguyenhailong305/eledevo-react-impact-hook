@@ -13,6 +13,13 @@ mongoose.connect('mongodb+srv://user:dauxanh09@cluster0.2w1k1.mongodb.net/?retry
 });
 
 app.use(cors({}))
+
+res.setHeader("Access-Control-Allow-Origin", "*");
+		res.setHeader("Access-Control-Allow-Credentials", "true");
+		res.setHeader("Access-Control-Max-Age", "1800");
+		res.setHeader("Access-Control-Allow-Headers", "content-type");
+		res.setHeader("Access-Control-Allow-Methods","PUT, POST, GET, DELETE, PATCH, OPTIONS");
+
 app.use(bodyParser.json());
 
 var routes = require('./api/route');
