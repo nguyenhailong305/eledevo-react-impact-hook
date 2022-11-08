@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3001'
+const BASE_URL = 'https://eledevo-react-impact-hook-vw12.vercel.app/'
 const LIMIT  = 5
 
 const API_METHOD = {
